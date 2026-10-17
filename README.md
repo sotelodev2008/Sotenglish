@@ -1,10 +1,10 @@
 # Sotenglish
 
-**Aplicación de escritorio para practicar inglés mediante transformaciones de frases (niveles B2 · C1 · C2)**
+**Aplicación de escritorio para practicar inglés mediante transformaciones de frases (niveles B2 · C1 · C2)**.
 
-**Puedes ver el la lista con todas las frases [aquí](./docs/exercises.md), y [aquí](./docs/solutions.md) puedes ver las soluciones**
+**Puedes ver el la lista con todas las frases [aquí](./docs/exercises.md), y [aquí](./docs/solutions.md) puedes ver las soluciones**.
 
-**Este archivo markdown fue hecho por IA, el codigo fue hecho por mi**
+**Este archivo markdown fue hecho por IA, el codigo fue hecho por mi**.
 
 ---
 
