@@ -1,6 +1,6 @@
 # Sotenglish — Frases
 
-**Las soluciones están [aquí](./solutions.md)
+**Las soluciones están [aquí](./solutions.md)**
 
 ## Índice
 
