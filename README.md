@@ -4,6 +4,8 @@
 
 **Este archivo markdown fue hecho por IA, el codigo fue hecho por mi**
 
+**Puedes ver el la lista con todas las frases [aquí](./docs/exercises.md), y [aquí](./docs/solutions.md) puedes ver las soluciones**
+
 ---
 
 ## Índice / Index
