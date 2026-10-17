@@ -1,6 +1,6 @@
 # Sotenglish — Frases y respuestas
 
-**Los ejercicios sin solucionar están [aquí](./exercises.md)**
+**Los ejercicios sin solucionar están [aquí](./exercises.md)**.
 
 Cada solución aparece en tres formas: **parte 1**, **parte 2** y **completa**. Las dos mitades sirven para la puntuación parcial de la aplicación (1 punto si la respuesta contiene exactamente una de ellas, 2 puntos si coincide con la solución completa).
 
