@@ -1,5 +1,7 @@
 # Sotenglish — Frases
 
+**Las soluciones están [aquí](./solutions.md)
+
 ## Índice
 
 - [B2](#b2)
