@@ -1,10 +1,10 @@
 package src.shared;
 
 import javax.swing.JFrame;
-import src.pc.sotenglish;
-import src.pc.window.results;
+import src.pc.Sotenglish;
+import src.pc.window.Results;
 
-public class data {
+public class Data {
     private static String[] enunciado = null;
     private static String[] palabra = null;
     private static String[] inicio = null;
@@ -16,7 +16,7 @@ public class data {
     public int total;
     JFrame ventana;
 
-    public data(int level, JFrame ventana) {
+    public Data(int level, JFrame ventana) {
         this.ventana = ventana;
         if (level == 1) {B2();} // Frases B2
         else if (level == 2) {C1();} // Frases C1
@@ -80,21 +80,21 @@ public class data {
 
     public void corregir(String sol, String user_sol, String sol_pt1, String sol_pt2, String inicio, String desenlace, String enunciado) {
         if (user_sol.contains(sol_pt1) ^ user_sol.contains(sol_pt2)){ // Este operador comprueba si se cumple una de las condiciones, si se cumplen las 2 no se ejecuta
-            sotenglish.pts++;
-            sotenglish.pts_text.setText("Puntos: " + sotenglish.pts);
+            Sotenglish.pts++;
+            Sotenglish.pts_text.setText("Puntos: " + Sotenglish.pts);
             tabien = new boolean[]{true, false};
         }
         else if(!sol.equals(user_sol)){
-            sotenglish.pts--;
-            sotenglish.pts_text.setText("Puntos: " + sotenglish.pts);
+            Sotenglish.pts--;
+            Sotenglish.pts_text.setText("Puntos: " + Sotenglish.pts);
             tabien = new boolean[]{false, false};}
             else{
-                sotenglish.pts++;
-                sotenglish.pts++;
-                sotenglish.pts_text.setText("Puntos: " + sotenglish.pts);
+                Sotenglish.pts++;
+                Sotenglish.pts++;
+                Sotenglish.pts_text.setText("Puntos: " + Sotenglish.pts);
                 tabien = new boolean[]{true, true};
             }
-        results comprobar = new results(enunciado, inicio, sol, desenlace, ventana);
+        Results comprobar = new Results(enunciado, inicio, sol, desenlace, ventana);
         comprobar.results_chooser(tabien);
     }
 }
