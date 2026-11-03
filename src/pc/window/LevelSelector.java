@@ -5,16 +5,16 @@ import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import src.pc.sotenglish;
+import src.pc.Sotenglish;
 
-public class level_selector {
+public class LevelSelector {
     JFrame ventana;
-    public level_selector(JFrame ventana) {
+    public LevelSelector(JFrame ventana) {
         this.ventana = ventana;
     }
     public void lvl_select_screen() {
 
-        sotenglish.pts_set = false;
+        Sotenglish.pts_set = false;
 
         JLabel hint = new JLabel("Elige un nivel de dificultad");
         hint.setFont(new Font("Arial", Font.PLAIN, 20));
@@ -68,40 +68,40 @@ public class level_selector {
     private void onButtonClick(int dificultad) {
         if (dificultad == 1) {
             System.out.println("Hola1");
-            sotenglish.current_screen = 2.1f;
-            if (!sotenglish.pts_set) {
-                sotenglish.pts_set = true;
-                if (sotenglish.current_screen == 2.1f) {sotenglish.level = 1;}
-                else if (sotenglish.current_screen == 2.2f) {sotenglish.level = 2;}
-                else if (sotenglish.current_screen == 2.3f) {sotenglish.level = 3;}
-                screen aScreen = new screen(ventana);
+            Sotenglish.current_screen = 2.1f;
+            if (!Sotenglish.pts_set) {
+                Sotenglish.pts_set = true;
+                if (Sotenglish.current_screen == 2.1f) {Sotenglish.level = 1;}
+                else if (Sotenglish.current_screen == 2.2f) {Sotenglish.level = 2;}
+                else if (Sotenglish.current_screen == 2.3f) {Sotenglish.level = 3;}
+                Screen aScreen = new Screen(ventana);
                 aScreen.update();
             }
         }
         else if (dificultad == 2) {
             System.out.println("Hola2");
-            sotenglish.current_screen = 2.2f;
-            if (!sotenglish.pts_set) {
-                sotenglish.pts_set = true;
-                if (sotenglish.current_screen == 2.1f) {sotenglish.level = 1;}
-                else if (sotenglish.current_screen == 2.2f) {sotenglish.level = 2;}
-                else if (sotenglish.current_screen == 2.3f) {sotenglish.level = 3;}
-                screen aScreen = new screen(ventana);
+            Sotenglish.current_screen = 2.2f;
+            if (!Sotenglish.pts_set) {
+                Sotenglish.pts_set = true;
+                if (Sotenglish.current_screen == 2.1f) {Sotenglish.level = 1;}
+                else if (Sotenglish.current_screen == 2.2f) {Sotenglish.level = 2;}
+                else if (Sotenglish.current_screen == 2.3f) {Sotenglish.level = 3;}
+                Screen aScreen = new Screen(ventana);
                 aScreen.update();
             }
         }
         else if (dificultad == 3) {
             System.out.println("Hola3");
-            sotenglish.current_screen = 2.3f;
-            if (!sotenglish.pts_set) {
-                sotenglish.pts_set = true;
-                if (sotenglish.current_screen == 2.1f) {sotenglish.level = 1;}
-                else if (sotenglish.current_screen == 2.2f) {sotenglish.level = 2;}
-                else if (sotenglish.current_screen == 2.3f) {sotenglish.level = 3;}
-                screen aScreen = new screen(ventana);
+            Sotenglish.current_screen = 2.3f;
+            if (!Sotenglish.pts_set) {
+                Sotenglish.pts_set = true;
+                if (Sotenglish.current_screen == 2.1f) {Sotenglish.level = 1;}
+                else if (Sotenglish.current_screen == 2.2f) {Sotenglish.level = 2;}
+                else if (Sotenglish.current_screen == 2.3f) {Sotenglish.level = 3;}
+                Screen aScreen = new Screen(ventana);
                 aScreen.update();
             }
         }
-        System.out.println("Cambiando a pantalla: " + sotenglish.current_screen);
+        System.out.println("Cambiando a pantalla: " + Sotenglish.current_screen);
     }
 }
