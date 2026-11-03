@@ -2,10 +2,10 @@ package src.shared;
 
 import java.util.Random;
 
-public class random {
+public class RandomNum {
     private int ranum; // Numero random
     Random ragen = new Random();
-    public random(int total){
+    public RandomNum(int total){
         this.ranum = total;
     }
     public int rantask() {
