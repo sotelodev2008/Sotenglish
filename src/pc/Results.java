@@ -6,15 +6,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import src.pc.sotenglish;
+import src.pc.Sotenglish;
 
-public class results {
+public class Results {
     private String enunciado;
     private String inicio;
     private String sol;
     private String desenlace;
     JFrame ventana;
-    public results(String enunciado, String inicio, String sol, String desenlace, JFrame ventana){
+    public Results(String enunciado, String inicio, String sol, String desenlace, JFrame ventana){
         this.enunciado = enunciado;
         this.inicio = inicio;
         this.sol = sol;
@@ -72,8 +72,8 @@ public class results {
         exit_button.setOpaque(true);
         exit_button.addActionListener(e -> System.exit(0));
 
-        ventana.add(sotenglish.titulo);
-        ventana.add(sotenglish.pts_text);
+        ventana.add(Sotenglish.titulo);
+        ventana.add(Sotenglish.pts_text);
         ventana.add(enunciado_text);
         ventana.add(sol_text);
         ventana.add(continue_button);
@@ -89,8 +89,8 @@ public class results {
     }
 
     private void meh(JLabel enunciado_text, JLabel sol_text){ // lo ha hecho regular
-        sotenglish.titulo.setForeground(Color.BLACK);
-        sotenglish.pts_text.setForeground(Color.BLACK);
+        Sotenglish.titulo.setForeground(Color.BLACK);
+        Sotenglish.pts_text.setForeground(Color.BLACK);
         enunciado_text.setForeground(Color.BLACK);
         sol_text.setForeground(Color.WHITE);
         ventana.getContentPane().setBackground(new Color(253, 218, 13));
@@ -104,12 +104,12 @@ public class results {
         ventana.getContentPane().removeAll();
         ventana.revalidate();
         ventana.repaint();
-        sotenglish.titulo.setForeground(Color.WHITE);
-        sotenglish.pts_text.setForeground(Color.WHITE);
-        ventana.add(sotenglish.titulo);
-        ventana.add(sotenglish.pts_text);
+        Sotenglish.titulo.setForeground(Color.WHITE);
+        Sotenglish.pts_text.setForeground(Color.WHITE);
+        ventana.add(Sotenglish.titulo);
+        ventana.add(Sotenglish.pts_text);
         ventana.getContentPane().setBackground(new Color(28, 30, 36));
-        rephrasal repetir = new rephrasal();
+        Rephrasal repetir = new Rephrasal();
         repetir.ejercicio(ventana);
     }
 
@@ -117,13 +117,13 @@ public class results {
         ventana.getContentPane().removeAll();
         ventana.revalidate();
         ventana.repaint();
-        sotenglish.titulo.setForeground(Color.WHITE);
-        sotenglish.pts_text.setForeground(Color.WHITE);
-        ventana.add(sotenglish.titulo);
-        ventana.add(sotenglish.pts_text);
+        Sotenglish.titulo.setForeground(Color.WHITE);
+        Sotenglish.pts_text.setForeground(Color.WHITE);
+        ventana.add(Sotenglish.titulo);
+        ventana.add(Sotenglish.pts_text);
         ventana.getContentPane().setBackground(new Color(28, 30, 36));
-        sotenglish.current_screen = 1.0f;
-        screen pantalla = new screen(ventana);
+        Sotenglish.current_screen = 1.0f;
+        Screen pantalla = new Screen(ventana);
         pantalla.update();
     }
 }
