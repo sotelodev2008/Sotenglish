@@ -1,23 +1,23 @@
 package src.pc.window;
 
 import javax.swing.JFrame;
-import src.pc.sotenglish;
+import src.pc.Sotenglish;
 
-public class screen {
+public class Screen {
     JFrame ventana;
-    public screen(JFrame empty_ventana) {
+    public Screen(JFrame empty_ventana) {
         this.ventana = empty_ventana;
     }
     public void update() {
-        if (sotenglish.current_screen == 1.0f) {
-            level_selector lvl_select = new level_selector(ventana); 
+        if (Sotenglish.current_screen == 1.0f) {
+            LevelSelector lvl_select = new LevelSelector(ventana); 
             lvl_select.lvl_select_screen();
         }
-        else if (sotenglish.current_screen == 2.1f || sotenglish.current_screen == 2.2f || sotenglish.current_screen == 2.3f) {
-            rephrasal ejercicio = new rephrasal();
+        else if (Sotenglish.current_screen == 2.1f || Sotenglish.current_screen == 2.2f || Sotenglish.current_screen == 2.3f) {
+            Rephrasal ejercicio = new Rephrasal();
             ventana.getContentPane().removeAll();
-            ventana.add(sotenglish.titulo);
-            ventana.add(sotenglish.pts_text);
+            ventana.add(Sotenglish.titulo);
+            ventana.add(Sotenglish.pts_text);
             ejercicio.ejercicio(ventana);
             System.out.println("¡Éxito! Estamos en la pantalla del nivel B2");
         }
