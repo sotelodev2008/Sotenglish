@@ -4,16 +4,16 @@ import java.awt.Color; // Permite crear colores HTML
 import java.awt.Font; // Permite crear fuentes
 import javax.swing.JFrame; // Ventana en swing
 import javax.swing.JLabel; // Permite crear textos o labels
-import src.pc.window.screen;
+import src.pc.window.Screen;
 
-public class sotenglish { // Archivo principal, gestiona los puntos, el titulo y la pantalla actual
+public class Sotenglish { // Archivo principal, gestiona los puntos, el titulo y la pantalla actual
     public static float current_screen = 1.0f; // Usado para saber en que ventana se encuentra
     public static int level; // Nivel de dificultad 1 = B2, 2 = C1 y 3 = C2
     public static int pts = 0; // Puntos
     public static boolean pts_set = false;
     public static JLabel titulo = new JLabel("Sotenglish");
     public static JLabel pts_text = new JLabel("Puntos: " + pts);
-    private static screen aScreen = null; // Actual Screen; gestiona todas las posibles ventanas
+    private static Screen aScreen = null; // Actual Screen; gestiona todas las posibles ventanas
     public static void main(String[] args) {
         JFrame ventana = new JFrame("Sotenglish");
         ventana.setSize(600, 400);
@@ -36,7 +36,7 @@ public class sotenglish { // Archivo principal, gestiona los puntos, el titulo y
             
         ventana.setVisible(true);
         
-        aScreen = new screen(ventana);
+        aScreen = new Screen(ventana);
         aScreen.update();
     }
 }
