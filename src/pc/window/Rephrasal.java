@@ -6,15 +6,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import src.pc.sotenglish;
-import src.shared.data;
-import src.shared.random;
+import src.pc.Sotenglish;
+import src.shared.Data;
+import src.shared.RandomNum;
 
-public class rephrasal {
-    public rephrasal(){}
+public class Rephrasal {
+    public Rephrasal(){}
     public void ejercicio(JFrame ventana) {
-        data frases = new data(sotenglish.level, ventana);
-        random ranum = new random(frases.total);
+        Data frases = new Data(Sotenglish.level, ventana);
+        RandomNum ranum = new RandomNum(frases.total);
         int index = ranum.rantask();
         String enunciado = frases.get_enunciado(index);
         String palabra = frases.get_palabra(index);
@@ -24,7 +24,7 @@ public class rephrasal {
         String sol_pt2 = frases.get_sol_pt2(index);
         String desenlace = frases.get_desenlace(index);
 
-        sotenglish.pts_set = false;
+        Sotenglish.pts_set = false;
 
         JLabel enunciado_text = new JLabel(enunciado);
         enunciado_text.setFont(new Font("Times New Roman", Font.PLAIN, 14));
